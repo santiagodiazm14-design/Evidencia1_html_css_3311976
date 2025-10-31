@@ -1,0 +1,83 @@
+---
+//div: etiqueta abierta
+// tiene elementos dentro
+//permite especificamente 
+//propiedades de ubicacion 
+
+
+   interface Props {
+        etiqueta: string;
+    }
+
+
+    //Crear una variable
+    //para recibir la etiqueta
+    const  etiqueta  = Astro.props.etiqueta;
+
+---
+<label>{etiqueta}</label> 
+
+
+
+
+<div>
+    <div id="cedula">
+         <input 
+        type="radio"
+        name="rbg"
+        id="radio1"
+         />
+         <strong> CC </strong>
+     </div>
+
+     <div id="tarjeta">
+         <input 
+        type="radio"
+        name="rbg"
+        id="radio2"
+         />
+          <strong> TI </strong>
+     </div>
+
+     <div id="extranjera">
+         <input 
+        type="radio"
+        name="rbg"
+        id="radio3"
+         />
+         <strong> CE </strong>
+     </div>
+     <style>
+        #cedula{
+            background-color: brown;
+            /*determina como una etiqueta se comporta
+            en cuanto a: display largo, ancho, ubicacion*/
+            display:inline;
+        }
+     </style>
+       <style>
+        #tarjeta{
+            background-color: rgb(173, 10, 111);
+            /*determina como una etiqueta se comporta
+            en cuanto a: display largo, ancho, ubicacion*/
+            display:inline;
+        }
+     </style>
+       <style>
+        #extranjera{
+            background-color: rgb(0, 217, 255);
+            /*determina como una etiqueta se comporta
+            en cuanto a: display largo, ancho, ubicacion*/
+            display:inline;
+        }
+     </style>
+      
+</div>
+<style>
+    /*estilos de atriubuto*/
+    /*se aplican a los elementos*/
+    /*que tenga el atributo*/
+    input[type="radio"]{
+        background-color: blueviolet;
+    }
+</style>

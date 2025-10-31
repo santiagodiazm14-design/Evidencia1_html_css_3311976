@@ -1,0 +1,52 @@
+---
+
+   interface Props {
+        etiqueta: string;
+    }
+
+
+    //Crear una variable
+    //para recibir la etiqueta
+    const  etiqueta  = Astro.props.etiqueta;
+---
+<label>{etiqueta}</label> 
+<select>
+    <option>Cali</option>
+    <option id=Bogota>Bogota</option>
+    <option id="Medellin">Medellin</option>
+    <option id="Cartagena">Cartagena </option>
+    <option id="Bucaramanga">Bucaramanga </option>
+
+</select>
+<style>
+    /*estilo de identificador*/
+    /*solo aplica a etiquetas que tenga el atributo id*/
+    /*solo debe haner un id igual*/
+    #Bogota{
+        color:red;
+    }
+    select{
+        border:2px yellow dotted;
+    }
+    #Medellin{
+        color:blue
+    }
+    select{
+        border:2px rgb(0, 255, 157) dotted;
+    }
+    #Cartagena{
+        color:rgb(201, 4, 14);
+    }
+    select{
+        border:2px rgb(24, 8, 68) dotted;
+    }
+     #Bucaramanga{
+        color:rgb(240, 177, 4);
+    }
+    select{
+        border:2px rgb(14, 202, 93) dotted;
+    }
+    
+    
+
+</style>

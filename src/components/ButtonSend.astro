@@ -1,0 +1,32 @@
+---
+
+   interface Props {
+        etiqueta: string;
+    }
+
+
+    //Crear una variable
+    //para recibir la etiqueta
+    const  etiqueta  = Astro.props.etiqueta;
+---
+
+<button class="boton-envio">
+    {etiqueta}
+</button>
+<style>
+    /*estilos de clasae*/
+    /*se aplican a los elementos */
+    /*que tengan el atributo class*/
+    /*con el mismo nombre de clase*/
+    .boton-envio{
+        background-color: black;
+        color: aliceblue;
+        width:100px;
+        height:40px;
+        border-top-right-radius:10px;
+         border
+
+    }
+
+
+</style>
