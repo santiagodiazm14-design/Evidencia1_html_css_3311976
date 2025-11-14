@@ -8,7 +8,7 @@ import FormLayout from "../layouts/FormLayout.astro";
 
 ---
 <FormLayout>
-	<h2 slot="subtitulo">Ingrese información</h2>
+	<h2 class="subtitulo"slot="subtitulo">Ingrese información</h2>
 	<InputText 
 	etiqueta="Nombre Completo"
 	slot="caja-texto"
@@ -25,15 +25,24 @@ import FormLayout from "../layouts/FormLayout.astro";
 <RadioButtonGroup
       etiqueta="seleccione tipo documento:"
       slot="grupo-radio"
+	  
 	   />
 
-<Select
-	etiqueta="Seleccione ciudad"
-	slot="select-ciudades"
-	/>
 <ButtonSend
 	etiqueta="Enviar"
 	slot="boton-envio"
 />
 
 </FormLayout>
+<style>
+    .subtitulo{
+        font-weight: 300px;
+        font-size: 25px;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #313179;
+		margin-left: 20px;
+		margin-top: 20px;
+
+        
+    }
+</style>
