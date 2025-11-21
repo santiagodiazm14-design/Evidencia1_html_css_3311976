@@ -8,9 +8,9 @@
     input{
         display:block;         
         background-color:#dbdbe2;
-        color:#1a1919;
+        color:#050505;
         /*color peso grosor*/
-        border-color:#df1616;
+        border-color:#f80b0b;
         border-width:3px;
         border-style:solid;
         border-radius:5px;
@@ -23,6 +23,8 @@
     label{
         
         display:block;
-        margin: 40px 0px 10px 20px;   
+        margin: 20px 0px 10px 20px;   
 
     }
+
+    

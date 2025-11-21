@@ -1,18 +1,18 @@
     .form{
         display:block;
         background-color: lightgray;
-        width: 500px;
+        width: 460px;
         border: 2px solid black;
         margin: 20px auto 20px auto;
         border-radius: 15px;
         font-family: Arial, Helvetica, sans-serif-;
-        
+        box-shadow: 10px 10px 5px 0px rgba(66, 66, 66, 0.75);
         
     }
 .titulo{
     background-color: beige;
     text-align: center;
-    color: rgb(48, 48, 224);
+    color: rgb(197, 29, 29);
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 600;
     margin-bottom: 50px;
